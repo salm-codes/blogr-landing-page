@@ -1,0 +1,95 @@
+@use 'abstracts' as *;
+
+.header-container {
+  position: relative;
+  height: 90vh;
+  background: $intro-gradient;
+  border-radius: 0 0 0 100px;
+  opacity: 0.9;
+  overflow: hidden;
+
+  .mobile-bg-pattern {
+    position: absolute;
+    opacity: 0.9;
+    left: -100px;
+    top: 50px;
+    z-index: -1;
+  }
+
+  .desktop-bg-pattern {
+    display: none;
+  }
+
+  .header-nav {
+    padding: 50px 20px;
+
+    .hamburger {
+      background-color: transparent;
+      border: none;
+      .menu-close {
+        display: none;
+      }
+    }
+
+    .hamburger.showing-close {
+      .menu-open {
+        display: none;
+      }
+
+      .menu-close {
+        display: block;
+      }
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .register {
+      display: none;
+    }
+  }
+
+  .header-content {
+    height: calc(80% - 86px);
+    flex-direction: column;
+    text-align: center;
+    color: $white;
+
+    h1 {
+      font-family: $ubuntu;
+      font-size: 40px;
+      margin-bottom: 20px;
+      max-width: 10cm;
+      font-weight: 400;
+    }
+
+    p {
+      color: whitesmoke;
+      font-size: 22px;
+      max-width: 27ch;
+      font-weight: 300;
+    }
+
+    .header-content_links {
+      margin-top: 50px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+      align-items: center;
+      button {
+        @include btn($white, transparent, $lredCTA, $white);
+        border: 2px solid $white;
+      }
+    }
+  }
+}
+
+.mobile-menu_main.disabled {
+  display: none;
+}
+
+.disabled {
+  display: none;
+}
+/* Header Styles */
