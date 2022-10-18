@@ -6,6 +6,7 @@ const dropdown = document.querySelectorAll('.dropdown');
 hamburger.addEventListener('click', function () {
   mobileMenu.classList.toggle('disabled');
   hamburger.classList.toggle('showing-close');
+  document.querySelector('html').classList.toggle('no-scroll');
 });
 
 function clear(c) {

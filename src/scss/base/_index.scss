@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html.no-scroll,
+html.no-scroll body {
+  overflow: hidden;
+}
+
 html {
   min-height: 100%;
   overflow-x: hidden;
