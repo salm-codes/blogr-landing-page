@@ -1,0 +1,40 @@
+@use 'abstracts' as *;
+
+.service {
+  height: 500px;
+  background: $body-gradient;
+  margin-top: 250px;
+  position: relative;
+  border-radius: 0 100px 0 100px;
+
+  .phone {
+    display: block;
+    height: 75%;
+    position: absolute;
+    left: 50%;
+    bottom: 300px;
+    transform: translateX(-50%);
+  }
+
+  .service-info {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+
+    .service-info-container {
+      h1 {
+        color: $white;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        width: 80%;
+        color: $graylishblue;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
