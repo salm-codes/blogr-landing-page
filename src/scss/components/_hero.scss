@@ -1,0 +1,31 @@
+@use 'abstracts' as *;
+
+.hero {
+  margin-block: 40px;
+
+  h1 {
+    text-align: center;
+    color: $vdblue;
+  }
+
+  .hero-intro {
+    margin-block: 25px;
+    position: relative;
+
+    .hero-img {
+      margin-block: 25px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .hero-info {
+    @include info;
+  }
+}
