@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 @mixin btn($bg1, $bg2, $c1, $c2) {
   display: block;
   border-radius: 50px;
@@ -14,5 +16,23 @@
   &:last-child {
     background-color: $bg2;
     color: $c2;
+  }
+}
+
+@mixin info {
+  .info {
+    h1 {
+      width: 75%;
+      margin: 0 auto;
+      color: $vdblue;
+      margin-block: 1rem;
+    }
+
+    p {
+      width: 75%;
+      text-align: center;
+      margin: 0 auto;
+      margin-block: 1rem;
+    }
   }
 }
