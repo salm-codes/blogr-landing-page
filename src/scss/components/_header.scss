@@ -193,3 +193,20 @@
   display: none;
 }
 /* Header Styles */
+
+@media (min-width: 476px) {
+  .header-container {
+    .header-nav {
+      width: calc(100% - 2rem);
+      margin: 0 auto;
+    }
+
+    .header-content {
+      width: calc(100% - 2rem);
+      margin: 0 auto;
+      h1 {
+        max-width: fit-content;
+      }
+    }
+  }
+}
