@@ -1,0 +1,25 @@
+@use 'abstracts' as *;
+
+.features {
+  margin-block: 40px;
+
+  h1 {
+    text-align: center;
+    color: $vdblue;
+  }
+  .features-img {
+    margin-block: 25px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  .features-info {
+    @include info;
+  }
+}
