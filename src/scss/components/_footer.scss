@@ -43,3 +43,41 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .footer-container {
+    max-width: 1440px;
+    display: flex;
+
+    .logo-blogr {
+      width: 25%;
+      align-items: flex-start;
+      position: relative;
+      bottom: 10px;
+    }
+
+    .footer-links {
+      width: 50%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+
+      h3,
+      li {
+        text-align: start;
+      }
+
+      li {
+        font-size: 18px;
+        margin-top: 0.5rem;
+
+        &:hover {
+          text-decoration: underline;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
