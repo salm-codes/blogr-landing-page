@@ -23,3 +23,51 @@
     @include info;
   }
 }
+
+@media (min-width: 768px) {
+  .features {
+    max-width: 1440px;
+    margin-block: 100px;
+    display: flex;
+
+    .features-img {
+      width: 40%;
+      margin-block: auto;
+      img {
+        &:first-child {
+          display: none;
+        }
+
+        &:last-child {
+          height: 50vw;
+          display: block;
+          position: relative;
+          left: -120px;
+        }
+      }
+    }
+
+    .features-info {
+      width: 60%;
+      margin-block: auto;
+      .info {
+        h1,
+        p {
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 996px) {
+  .features {
+    .features-img {
+      width: 50%;
+    }
+
+    .features-info {
+      width: 50%;
+    }
+  }
+}
