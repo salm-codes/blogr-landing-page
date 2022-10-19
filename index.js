@@ -3,6 +3,9 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const menuItem = document.querySelectorAll('.menu-item');
 const dropdown = document.querySelectorAll('.dropdown');
 
+const navItem = document.querySelectorAll('.nav-item');
+const dropdownMenu = document.querySelectorAll('.dropdown-menu');
+
 hamburger.addEventListener('click', function () {
   mobileMenu.classList.toggle('disabled');
   hamburger.classList.toggle('showing-close');
@@ -29,5 +32,15 @@ menuItem.forEach(item => {
     clear(dropdown);
     dropdown[item.dataset.id].classList.toggle('active');
     updateItem(menuItem, item.dataset.id);
+  });
+});
+
+navItem.forEach((item, index) => {
+  item.addEventListener('click', function () {
+    item.classList.add('active');
+    clear(dropdownMenu);
+    dropdownMenu[index].classList.toggle('active');
+    updateItem(navItem, index);
+    overlay.classList.add('active');
   });
 });
