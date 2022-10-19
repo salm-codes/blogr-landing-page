@@ -38,3 +38,57 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .service {
+    height: 33vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10vw;
+
+    .phone {
+      height: 50vw;
+      width: 50vw;
+      position: absolute;
+      top: -75px;
+      left: 25vw;
+    }
+
+    .service-info {
+      width: 50%;
+      padding-inline: 1rem;
+      position: static;
+      transform: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .service-info-container {
+        h1 {
+          font-size: 24px;
+          text-align: start;
+        }
+
+        p {
+          max-width: 40ch;
+          width: auto;
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 996px) {
+  .service {
+    .service-info {
+      .service-info-container {
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          max-width: 55ch;
+        }
+      }
+    }
+  }
+}
