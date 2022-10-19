@@ -6,6 +6,8 @@ const dropdown = document.querySelectorAll('.dropdown');
 const navItem = document.querySelectorAll('.nav-item');
 const dropdownMenu = document.querySelectorAll('.dropdown-menu');
 
+const overlay = document.querySelector('.overlay');
+
 hamburger.addEventListener('click', function () {
   mobileMenu.classList.toggle('disabled');
   hamburger.classList.toggle('showing-close');
@@ -43,4 +45,10 @@ navItem.forEach((item, index) => {
     updateItem(navItem, index);
     overlay.classList.add('active');
   });
+});
+
+overlay.addEventListener('click', function () {
+  overlay.classList.remove('active');
+  clear(dropdownMenu);
+  clear(navItem);
 });
