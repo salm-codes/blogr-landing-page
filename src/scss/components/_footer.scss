@@ -1,0 +1,45 @@
+@use 'abstracts' as *;
+
+.footer-container {
+  background-color: $vdblackblue;
+  border-radius: 0 100px 0 0;
+  padding-block: 50px;
+  .logo-blogr {
+    margin-bottom: 50px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-links {
+    flex-direction: column;
+
+    h3 {
+      color: $white;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    li {
+      font-size: 22px;
+      text-align: center;
+      margin-top: 0.5rem;
+
+      a {
+        color: $graylishblue;
+        font-weight: 300;
+      }
+
+      &:last-child {
+        margin-bottom: 1.5rem;
+      }
+
+      &:hover,
+      &:active {
+        opacity: 0.75;
+      }
+    }
+  }
+}
